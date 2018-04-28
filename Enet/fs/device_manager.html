@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<META http-equiv="Content-Type" content="no-cache"> <!-- 禁止页面缓冲到客户端 -->
+		<META http-equiv="expires" content="Sun,18 May 1900 00:00:00 GMT"> <!--页面立即过期 -->
+		<META http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<!-- 加载样式 -->
+		<link rel="STYLESHEET" type="text/css" href="./codebase/dhtmlxtabbar.css">
+	</head>
+    <body>
+		<div style="margin-top:10px;margin-bottom:10px;border:0px solid red;">
+			<table id="mytable" align="center" style="margin-top:10px; width:100%;height:30%;align:top">
+			 	<tr width="100%">
+					 <th width="10%">通道</th>
+					 <th width="10%">状态</th>
+					 <th width="10%">操作</th>
+					 <th width="10%">操作</th>
+					 <th width="10%">操作</th>
+					 <th width="10%">主状态</th>
+					 <th width="10%">备状态</th>
+					 <th width="10%">辅状态</th>				 
+			 	</tr>	
+			 	<tr>
+					<th style="font-size:12px; text-align:center;">通道1</th>
+					<td>
+						<div id="ch1_state" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_main(1)">主</button>	
+					</td>	
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_back(1);">备</button>	
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_aux(1);">辅</button>	
+					</td>	
+					<td>
+						<div id="ch1_main_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>
+					<td>
+						<div id="ch1_back_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td>
+						<div id="ch1_aux_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>													
+			 	</tr >
+			 	<tr>
+					<th style="font-size:12px; text-align:center;">通道2</th>
+					<td>
+						<div id="ch2_state" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_main(2)">主</button>	
+					</td>	
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_back(2);">备</button>	
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_aux(2);">辅</button>	
+					</td>	
+					<td>
+						<div id="ch2_main_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>
+					<td>
+						<div id="ch2_back_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td>
+						<div id="ch2_aux_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>													
+			 	</tr >
+			 	<tr>
+					<th style="font-size:12px; text-align:center;">通道3</th>
+					<td>
+						<div id="ch3_state" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_main(3)">主</button>	
+					</td>	
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_back(3);">备</button>	
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_aux(3);">辅</button>	
+					</td>	
+					<td>
+						<div id="ch3_main_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>
+					<td>
+						<div id="ch3_back_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td>
+						<div id="ch3_aux_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>													
+			 	</tr >
+			 	<tr>
+					<th style="font-size:12px; text-align:center;">通道4</th>
+					<td>
+						<div id="ch4_state" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_main(4)">主</button>	
+					</td>	
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_back(4);">备</button>	
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_aux(4);">辅</button>	
+					</td>	
+					<td>
+						<div id="ch4_main_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>
+					<td>
+						<div id="ch4_back_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td>
+						<div id="ch4_aux_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>													
+			 	</tr >
+			 	<tr>
+					<th style="font-size:12px; text-align:center;">通道5</th>
+					<td>
+						<div id="ch5_state" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_main(5)">主</button>	
+					</td>	
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_back(5);">备</button>	
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_aux(5);">辅</button>	
+					</td>	
+					<td>
+						<div id="ch5_main_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>
+					<td>
+						<div id="ch5_back_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td>
+						<div id="ch5_aux_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>													
+			 	</tr >
+			 	<tr>
+					<th style="font-size:12px; text-align:center;">通道6</th>
+					<td>
+						<div id="ch6_state" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_main(6)">主</button>	
+					</td>	
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_back(6);">备</button>	
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_aux(6);">辅</button>	
+					</td>	
+					<td>
+						<div id="ch6_main_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>
+					<td>
+						<div id="ch6_back_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td>
+						<div id="ch6_aux_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>													
+			 	</tr >
+			 	<tr>
+					<th style="font-size:12px; text-align:center;">通道7</th>
+					<td>
+						<div id="ch7_state" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_main(7)">主</button>	
+					</td>	
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_back(7);">备</button>	
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_aux(7);">辅</button>	
+					</td>	
+					<td>
+						<div id="ch7_main_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>
+					<td>
+						<div id="ch7_back_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td>
+						<div id="ch7_aux_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>													
+			 	</tr >
+			 	<tr>
+					<th style="font-size:12px; text-align:center;">通道8</th>
+					<td>
+						<div id="ch8_state" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_main(8)">主</button>	
+					</td>	
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_back(8);">备</button>	
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_aux(8);">辅</button>	
+					</td>	
+					<td>
+						<div id="ch8_main_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>
+					<td>
+						<div id="ch8_back_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td>
+						<div id="ch8_aux_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>													
+			 	</tr >
+			 	<tr>
+					<th style="font-size:12px; text-align:center;">通道9</th>
+					<td>
+						<div id="ch9_state" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_main(9)">主</button>	
+					</td>	
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_back(9);">备</button>	
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_aux(9);">辅</button>	
+					</td>	
+					<td>
+						<div id="ch9_main_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>
+					<td>
+						<div id="ch9_back_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td>
+						<div id="ch9_aux_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>													
+			 	</tr >
+			 	<tr>
+					<th style="font-size:12px; text-align:center;">通道10</th>
+					<td>
+						<div id="ch10_state" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_main(10)">主</button>	
+					</td>	
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_back(10);">备</button>	
+					</td>		
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_to_aux(10);">辅</button>	
+					</td>	
+					<td>
+						<div id="ch10_main_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>
+					<td>
+						<div id="ch10_back_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>		
+					<td>
+						<div id="ch10_aux_status" align="center" size="2" style="font-size:12px;color:blue">-</div>
+					</td>													
+			 	</tr >	 
+			 	<tr>
+					<th style="font-size:12px; text-align:center;"></th>
+					<td align="center" valign="center">
+						<button  class="cupid-blue" style="width:50%;" onclick="ch_update_all();">ALL</button>	
+					</td>						
+					<th style="font-size:12px; text-align:center;"></th>	
+					<th style="font-size:12px; text-align:center;"></th>
+					<th style="font-size:12px; text-align:center;"></th>
+					<th style="font-size:12px; text-align:center;"></th>
+					<th style="font-size:12px; text-align:center;"></th>
+					<th style="font-size:12px; text-align:center;"></th>													
+			 	</tr >				 					 		 			 	
+			</table>
+		</div>
+		
+    </body>
+</html>
